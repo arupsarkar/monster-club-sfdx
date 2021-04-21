@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set will manage all permissions to Monster Club app.</description>
+    <label>Monster Club PMG</label>
+    <permissionSets>Monster_Club_PS</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
