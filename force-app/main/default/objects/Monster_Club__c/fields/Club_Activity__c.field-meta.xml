@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Club_Activity__c</fullName>
+    <description>Club activity types</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Club activity types</inlineHelpText>
+    <label>Club Activity</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stomp around the house</fullName>
+                <default>false</default>
+                <label>Stomp around the house</label>
+            </value>
+            <value>
+                <fullName>Jumping on the Bed</fullName>
+                <default>false</default>
+                <label>Jumping on the Bed</label>
+            </value>
+            <value>
+                <fullName>Shuffle Songs</fullName>
+                <default>false</default>
+                <label>Shuffle Songs</label>
+            </value>
+            <value>
+                <fullName>Slimy Eyes</fullName>
+                <default>false</default>
+                <label>Slimy Eyes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
