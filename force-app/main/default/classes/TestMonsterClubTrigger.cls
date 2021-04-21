@@ -21,10 +21,11 @@ public with sharing class TestMonsterClubTrigger {
     @isTest
     static void test_create_monsterClubRecord() {
         Test.startTest();
-            List<Monster_club__c> records = [SELECT Id, Name from Monster_club__c LIMIT 1];
-        	records[0].Name = 'Test Party 1';
-        	update records;
+            List<Monster_club__c> recordsBefore = [SELECT Id, Name from Monster_club__c LIMIT 1];
+        	recordsBefore[0].Name = 'Test Party 1';
+        	update recordsBefore;
         Test.stopTest();
-        System.assertEquals('Test Party 1' + ' - ' + String.valueOf(System.today()) , records[0].Name, 'Names do not match');
+        List<Monster_club__c> recordsAfter = [SELECT Id, Name from Monster_club__c LIMIT 1];
+        System.assertEquals('Test Party 1' + ' - ' + String.valueOf(System.today()) , recordsAfter[0].Name, 'Names do not match');
     }
 }
